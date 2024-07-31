@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(right\ side\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 0;
+}
+
+/* === HEADER SECTION === */
+nav > ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 50px;
+}
+
+.btn {
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    list-style: none;
+    margin: 2px 5px;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    background-color: #39e1c5;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* === MAIN SECTION === */
+
+main {
+    /* background-color: lightgreen; === TESTING PHASE === */
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* === LEFT SECTION === */
+
+#left {
+    /* background-color: lightblue; === TESTING PHASE === */
+    flex-basis: 50%;
+    text-align: center;
+}
+
+#left > h1 {
+font-size: 60px;
+color: white;
+}
+
+#left > p {
+    font-style: italic;
+    font-weight: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+.imgph img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 100px 10px;
+    width: 200px;
+    object-fit: fill;
+    height: 150px;
+    padding: 2opx;
+    border-radius: 150px;
+}
+
+.imgph .text {
+    color: white;
+    font-weight: 70px;
+    font-size: 20px;
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+/* === RIGHT SECTION === */
+
+#right {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightpink; === TESTING PHASE === */
+}
+
+input {
+    width: 40%;
+}
+
+/* ===FOOTER SECTION === */
+
+footer {
+    color: white;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#socials:hover {
+    transform: scale(1.2)
+}
+
+/* === MEDIA QUERIES === */
+
+@media screen and (max-width: 768px) {
+    nav, main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        font-size: 12px;
+    }
+}
